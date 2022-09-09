@@ -28,7 +28,7 @@ spec:
             # service without receiving production traffic.
             selector:
               matchLabels:
-                app: {{ template "helm-guestbook.fullname" . }}
+                app: {{ template "helm-guestbook.fullname" . }}-preview
             metadata:
               labels:
                 app: {{ template "helm-guestbook.fullname" . }}-preview
